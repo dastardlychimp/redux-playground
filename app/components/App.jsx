@@ -7,7 +7,8 @@ export default class App extends React.Component {
     return (
       <div id="content">
         {/*<Counter />*/}
-        <StyledInput />
+        <div><StyledInput placeholder="First name"/></div>
+        <div><StyledInput placeholder="Last name"/></div>
       </div>
     );
   }

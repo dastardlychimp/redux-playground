@@ -1,24 +1,22 @@
-import styled, {keyframes} from 'styled-components'
-
-const kf = keyframes`
-    from {
-        outline-color: black
-    }
-
-    to {
-        outline-color: rgb(111, 237, 178);
-    }
-`
+import styled from 'styled-components'
 
 export default styled.input`
-    height:  15px;
-    width:   400px;
-    padding: 10px;
+    height:  ${ props => props.height || '' };
+    width:   ${ props => props.width  || '20%' };
+    font-size: 16px;
+
+    padding: 8px;
+    margin: 8px;
+
     border: 1px solid black;
-    font-size: 14px;
+    outline: 0px solid black;
+
+    transition: outline 0s;
 
     &:focus {
         outline: 2px solid rgb(111, 237, 178);
-        animation: ${kf} 0.5s linear;
+        transition: outline 0.5s ease;
     }
+
+    ${ props => props.otherStyle ? props.otherStyle : '' }
 `
