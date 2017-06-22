@@ -1,7 +1,8 @@
 import React from 'react'
 // import Counter from './Counter'
 import StyledInput from './styled/StyledInput'
-import dataListInput from './styled/dataListInput'
+import StyledDataListInput from './styled/StyledDataListInput'
+import AutoInput from './AutoInput'
 
 export default class App extends React.Component {
   render() {
@@ -11,7 +12,8 @@ export default class App extends React.Component {
         {/*<Counter />*/}
         <div><StyledInput placeholder="First name"/></div>
         <div><StyledInput placeholder="Last name"/></div>
-        <div><dataListInput dataList = { dataList } /></div>
+        <div><StyledDataListInput dataList = { dataList } /></div>
+        <div><AutoInput options = { dataList } /></div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import StyledInput from './styled/StyledInput'
-import generateRandomString from '../helpers/randomString'
+import StyledInput from './StyledInput'
+import generateRandomString from '../../helpers/randomString'
 
 export default function dataListInput(props) {
     const {dataList, className, id = generateRandomString(8)} = props
