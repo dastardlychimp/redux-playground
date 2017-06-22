@@ -15,7 +15,7 @@ export default styled.input`
 
     &:focus {
         outline: 2px solid rgb(111, 237, 178);
-        transition: outline 0.5s ease;
+        transition: outline 0.3s ease;
     }
 
     ${ props => props.otherStyle ? props.otherStyle : '' }
